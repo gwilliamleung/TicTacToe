@@ -38,7 +38,7 @@ def winCon(board):
         exit()
     if board['top-L'] == board['mid-M'] == board['low-R'] == turn:
         printBoard(board)
-        print( turn + " has won!")
+        print( turn + " has won! Secret ending!")
         exit()
     if board['top-R'] == board['mid-M'] == board['low-L'] == turn:
         printBoard(board)
