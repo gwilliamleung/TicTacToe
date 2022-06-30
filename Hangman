@@ -1,0 +1,20 @@
+def playHangman(word):
+    guesses = 6
+    i = 0
+    x = 0
+    wordList = list(word)
+    print(wordList)
+    while (i < guesses):
+        print(guesses)
+        playerGuess = input()
+        while i < len(wordList):
+            if playerGuess == wordList[i]:
+                print(wordList[i])
+                i+1
+            else:
+                guesses = guesses-1
+        
+
+word = "jazz"
+playHangman(word)
+
