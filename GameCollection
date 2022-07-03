@@ -1,4 +1,6 @@
 import os
+from winsound import PlaySound
+import Hangman
 
 fileName = os.listdir('.')
 del fileName[:2]
@@ -6,3 +8,6 @@ print(fileName)
 print("Welcome to William's game collection! \
 In this installment, I currently have", len(fileName), "game(s) for you!")
 print("They're called:", fileName)
+print("which would you like to play")
+
+Hangman.PlayHangman
