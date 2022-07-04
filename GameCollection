@@ -1,6 +1,5 @@
-import os
-from winsound import PlaySound
-import Hangman
+from hangman import playHangman
+from tictactoe import playTicTacToe
 
 fileName = os.listdir('.')
 del fileName[:2]
@@ -10,4 +9,4 @@ In this installment, I currently have", len(fileName), "game(s) for you!")
 print("They're called:", fileName)
 print("which would you like to play")
 
-Hangman.PlayHangman
+playHangman
